@@ -30,14 +30,14 @@ func init() {
 }
 
 type Ip struct {
-	IP       string `json::"ip"`
-	City     string `json::"city"`
-	Loc      string `json::loc`
-	Region   string `json::"region"`
-	Country  string `json::"country"`
-	Org      string `json::"org"`
-	Postal   string `json::"postal"`
-	Timezone string `json::"timezone"`
+	IP       string `json:"ip"`
+	City     string `json:"city"`
+	Loc      string `json:"loc"`
+	Region   string `json:"region"`
+	Country  string `json:"country"`
+	Org      string `json:"org"`
+	Postal   string `json:"postal"`
+	Timezone string `json:"timezone"`
 }
 
 func showData(ipAddress string) {
