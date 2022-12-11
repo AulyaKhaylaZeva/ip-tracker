@@ -3,7 +3,7 @@ package cmd
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 
@@ -65,7 +65,7 @@ func getData(url string) []byte {
 		log.Println("Unable to get the response.")
 	}
 
-	responseByte, err := ioutil.ReadAll(response.Body)
+	responseByte, err := io.ReadAll(response.Body)
 	if err != nil {
 		log.Println("Unable to read the response")
 	}
