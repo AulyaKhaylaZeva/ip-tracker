@@ -8,10 +8,10 @@ var version = "1.0.0"
 
 var (
 	rootCmd = &cobra.Command{
-		Use:   "iptracker",
+		Use:     "iptracker",
 		Version: version,
-		Short: "CLI App to track IP Addresses.",
-		Long:  `CLI App to track IP Addresses.`,
+		Short:   "CLI App to track IP Addresses.",
+		Long:    `CLI App to track IP Addresses.`,
 	}
 )
 
